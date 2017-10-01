@@ -1,0 +1,6 @@
+<html>
+<meta charset="utf-8">
+<b>ngphfpmypg.py</b> script will wait input for <b>IP</b>, <b>username</b>, <b>password</b> and <b>sitename</b>. Script will install nginx web server to this server. After script will add virtualhost for sitename input. Then will print nginx web server is ready and if you want to install configure MySQL or PostgreSQL with php-fpm select from menu. Otherwise just press <b>"Enter"</b> button to exit. If you will choose <b>"1"</b>, MySQL and PHP-FPM with extensions will be installed and configured(MySQL root password is: <b>freebsd</b>). Then script will ask about <b>database</b>, <b>username</b> and <b>password</b> for new virtualhost. If you will choose <b>"2"</b>, PostgreSQL and PHP-FPM with extensions will be installed and configured. At the end script will create db user and pass for this virtualhost. If you will open page with <b>http://virtualhostname</b> you must see the installed MySQL version or for PostgreSQL one book submit page.
+
+If you want to add new virtualhost just use <b>add-vhost-ngphfpmypg.py</b> script. Script will wait input for Nginx server IP, username, pass and for virtualhost name. After that script will check virtualhost name on the web server. If this name is exists on the Nginx web server, script will exit. If not exists, script will create all needs for this virtualhost.
+</html>
